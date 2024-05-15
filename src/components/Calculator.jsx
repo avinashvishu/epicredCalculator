@@ -47,7 +47,7 @@ const Calculator = () => {
     setlinedata(newLinedata)
   }
   return (
-    <div className="md:w-4/5 w-[90%] h-5/6 rounded-3xl shadow-lg bg-white border-gray-200 p-5 flex flex-col gap-2" >
+    <div className="md:w-4/5 w-[90%] md:h-5/6 h-fit rounded-3xl shadow-lg bg-white border-gray-200 p-5 flex flex-col gap-2" >
         {/* heading */}
         <div className="flex flex-col gap-3 items-center justify-center">
             <h1 className="font-medium text-2xl">Estimate Your Future Earnings</h1>
@@ -91,10 +91,10 @@ const Calculator = () => {
             {/* chart section */}
        
             <div className="md:w-8/12 w-full md:h-full h-2/4 flex flex-col items-center" >
-                <div className="w-2/4 h-1/2">
+                <div className="md:w-2/4 md:h-1/2 w-[100%]">
                  <PieChart KeyData={Object.keys(data)} valueData={Object.values(data)}/>
                 </div>
-                <div className="w-2/4 h-1/2">
+                <div className="md:w-2/4 md:h-1/2 w-[100%]">
                 <LineChart dataline={linedata}/>
                 </div>
             </div>

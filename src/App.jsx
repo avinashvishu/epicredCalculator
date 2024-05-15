@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     
-      <div className='h-screen w-screen bg-slate-100 flex justify-center items-center'>
+      <div className='h-screen w-screen bg-slate-100 flex justify-center items-center py-4 '>
          <Calculator/> 
       </div>
 
